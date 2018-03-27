@@ -1,0 +1,6 @@
+CREATE DATABASE akademik;
+USE akademik;
+CREATE TABLE mahasiswa (nim char(10), nama varchar(150), alamat varchar(250), agama varchar(7));
+CREATE TABLE dosen (nip char(10), nama varchar(150), alamat varchar(250), agama varchar(7));
+CREATE TABLE matakuliah (Kode char(10), Nama varchar(150),sks int);
+CREATE TABLE KRS (nim char(10), kode char(10), nip char(10), uts int, uas int, akhir float, huruf char (1), bobot int);
