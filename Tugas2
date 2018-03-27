@@ -1,0 +1,25 @@
+CREATE DATABASE akademik;
+USE akademik;
+CREATE TABLE mahasiswa (nim char(10), nama varchar(150), alamat varchar(250), agama varchar(7));
+CREATE TABLE dosen (nip char(10), nama varchar(150), alamat varchar(250), agama varchar(7));
+CREATE TABLE matakuliah (Kode char(10), Nama varchar(150),sks int);
+CREATE TABLE KRS (nim char(10), kode char(10), nip char(10), uts int, uas int, akhir float, huruf char (1), bobot int);
+INSERT INTO dosen (Nip, Nama, Alamat, Agama)
+
+// Masukkan Data Dosen
+
+INSERT INTO dosen (nip,nama,alamat,agama)VALUES(‘B001’,’tina’,’SEMARANG’,’islam’);
+INSERT INTO dosen (nip,nama,alamat,agama)VALUES(‘B002’,’budi’,’BANDUNG’,’islam’);
+INSERT INTO dosen (nip,nama,alamat,agama)VALUES(‘B003’,’fajar’,’JAKARTA’,’islam’);
+
+// Data Mahasiswa
+
+INSERT INTO mahasiswa (nim,nama,alamat,agama)VALUES(‘1701’,’irfan’,’jl.anggrek’,’islam’);
+INSERT INTO mahasiswa (nim,nama,alamat,agama)VALUES(‘1702’,’yono’,’jl.kenanga’,’kristen’);
+INSERT INTO mahasiswa (nim,nama,alamat,agama)VALUES(‘1703’,’dendi’,’jl.mawar’,’islam’);
+
+// Data KRS
+
+INSERT INTO matakuliah (kode,nama,sks)VALUES(‘aaa’,’Kewirausahaan’,’4’);
+INSERT INTO matakuliah (kode,nama,sks)VALUES(‘bbb’,’Arsitektur Komputer’,’4’);
+INSERT INTO matakuliah (kode,nama,sks)VALUES(‘ccc’,’Pemograman Data’,’5’);
